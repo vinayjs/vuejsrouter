@@ -21,7 +21,7 @@ The file  will conatin an array of objects named routes.This array represents ou
   name:'Home',
   component: Home
   },
-<br>
+
     {
   path: '/about',
   name:'About',
@@ -31,7 +31,6 @@ The file  will conatin an array of objects named routes.This array represents ou
 ]
 
 #####  createRouter( options ): 
-<br>
  Creates a Router instance that can be used by a Vue app.
  <br>
  In the index.js js after declaring routes ,add 
@@ -47,6 +46,6 @@ The file  will conatin an array of objects named routes.This array represents ou
         <router-view/>
         
 ######  Router-link tags.<br> 
-These tags are just fancy anchor links. However unlike an anchor link (<a href=""> tag) the <router-link> will not reload the whole page. Remember Vue is a single-page application. The data for the app is already downloaded from the server. When we route to another view the application just hides some information and displays the requested information. router-link tags have a to property which refers to which page to visit. The <router-view/> tag is what renders the right component when navigation links are triggered.
+These tags are just fancy anchor links. However unlike an anchor link 'a href=""', tag the 'router-link' will not reload the whole page. Remember Vue is a single-page application. The data for the app is already downloaded from the server. When we route to another view the application just hides some information and displays the requested information. router-link tags have a to property which refers to which page to visit. The <router-view/> tag is what renders the right component when navigation links are triggered.
         
 ###### in the index.js file add , use(router).mount(#app)
