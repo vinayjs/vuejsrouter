@@ -21,14 +21,12 @@ const routes =
   path: '/',
   name:'Home',
   component: Home
-  },
-
+  }
     {
   path: '/about',
   name:'About',
   component: ABOUT
-  }  
-
+  }
 ]
 
 ###  createRouter( options ): 
@@ -42,7 +40,7 @@ const routes =
 })
 ### In the App.vue (root file), add router-link and router-view
 
-######   <router-link to="/">Home</router-link> |  <router-link to="/about">About</router-link> <br>
+        <router-link to="/">Home</router-link> |  <router-link to="/about">About</router-link> <br>
         <router-view/>
         
 ####  Router-link tags.<br> 
