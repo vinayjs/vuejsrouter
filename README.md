@@ -8,14 +8,15 @@
 
 #### A file named router/index.js file is also generated, which contains the router configurations.
 
-##### router/index.js
+### router/index.js
 <br>
 In this file we will import createRouter and createWebHistory from the vue-router library and will import the pages for router from the views folder.
 The file  will conatin an array of objects named routes.This array represents our routes in the application
 
 ##### ROUTER OBJECTS
-###### const routes = [  
-<br>
+
+const routes = 
+[
   {
   path: '/',
   name:'Home',
@@ -27,10 +28,10 @@ The file  will conatin an array of objects named routes.This array represents ou
   name:'About',
   component: ABOUT
   }  
-<br>
+
 ]
 
-#####  createRouter( options ): 
+###  createRouter( options ): 
  Creates a Router instance that can be used by a Vue app.
  <br>
  In the index.js js after declaring routes ,add 
@@ -39,13 +40,12 @@ The file  will conatin an array of objects named routes.This array represents ou
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-##### In the App.vue (root file), add router-link and router-view
+### In the App.vue (root file), add router-link and router-view
 
-######   <router-link to="/">Home</router-link> | <br>
-       <router-link to="/about">About</router-link> <br>
+######   <router-link to="/">Home</router-link> |  <router-link to="/about">About</router-link> <br>
         <router-view/>
         
-######  Router-link tags.<br> 
+####  Router-link tags.<br> 
 These tags are just fancy anchor links. However unlike an anchor link 'a href=""', tag the 'router-link' will not reload the whole page. Remember Vue is a single-page application. The data for the app is already downloaded from the server. When we route to another view the application just hides some information and displays the requested information. router-link tags have a to property which refers to which page to visit. The <router-view/> tag is what renders the right component when navigation links are triggered.
         
-###### in the index.js file add , use(router).mount(#app)
+#### In the index.js file add , use(router).mount(#app)
